@@ -9,6 +9,7 @@
 
 import SwiftUI
 
+
 struct StickerModal: View {
   @Binding var stickerImage: UIImage?
 @Environment(\.dismiss) var dismiss

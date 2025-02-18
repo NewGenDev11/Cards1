@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct AppLoadingView: View {
+    @State private var showSplash = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if showSplash {
+            SplashScreen()
+                .ignoresSafeArea()
+                .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                withAnimation{
+                showSplash = false
+                }
+                }
+                }
+        } else {
+            CardsListView()
+                .transition(.scale(scale: 0, anchor: .top))
+        }
     }
 }
 
-#Preview {
-    AppLoadingView()
-}
+struct ApplLoadingView_Previews: PreviewProvider {
+        static var previews: some View {
+            AppLoadingView()
+                .environmentObject(CardStore(defaultData: true))
+        }
+    }

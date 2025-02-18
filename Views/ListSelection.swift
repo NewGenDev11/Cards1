@@ -7,12 +7,29 @@
 
 import SwiftUI
 
+enum ListState {
+case list, carousel
+}
+
 struct ListSelection: View {
+    @Binding var listState: ListState
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // 1
+        // 2
+        Picker(selection: $listState, label: Text("")) {
+            Image(systemName: "square.grid.2x2.fill")
+                .tag(ListState.list)
+            Image(systemName: "rectangle.stack.fill")
+                .tag(ListState.carousel)
+        }
+        // 3
+        .pickerStyle(.segmented)
+        .frame(width: 200)
     }
 }
 
-#Preview {
-    ListSelection()
+struct ListSelection_Previews: PreviewProvider {
+    static var previews: some View {
+    ListSelection(listState: .constant(.list))
+    }
 }

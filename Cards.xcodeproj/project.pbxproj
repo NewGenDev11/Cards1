@@ -10,10 +10,54 @@
 		823A6F8F2D614FFA00BB3386 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		823A6FDA2D61579900BB3386 /* Exceptions for "Cards" folder in "Cards" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 823A6F8E2D614FFA00BB3386 /* Cards */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8226F4232D63DD48003F2C68 /* Supporting Code */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Supporting Code";
+			sourceTree = "<group>";
+		};
 		823A6F912D614FFA00BB3386 /* Cards */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				823A6FDA2D61579900BB3386 /* Exceptions for "Cards" folder in "Cards" target */,
+			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		823A6FBF2D6152E600BB3386 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		823A6FCE2D6153E300BB3386 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		823A6FD62D61546600BB3386 /* Config */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		823A6FEE2D622E0500BB3386 /* Stickers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = Stickers;
+			path = /Users/curtisfisher/Documents/Cards/Stickers;
+			sourceTree = "<absolute>";
+		};
+		829731412D6254C30040E116 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,8 +76,14 @@
 		823A6F862D614FFA00BB3386 = {
 			isa = PBXGroup;
 			children = (
+				8226F4232D63DD48003F2C68 /* Supporting Code */,
+				823A6FD62D61546600BB3386 /* Config */,
+				823A6FBF2D6152E600BB3386 /* Model */,
+				823A6FCE2D6153E300BB3386 /* Extensions */,
 				823A6F912D614FFA00BB3386 /* Cards */,
 				823A6F902D614FFA00BB3386 /* Products */,
+				823A6FEE2D622E0500BB3386 /* Stickers */,
+				829731412D6254C30040E116 /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +111,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				8226F4232D63DD48003F2C68 /* Supporting Code */,
 				823A6F912D614FFA00BB3386 /* Cards */,
+				823A6FBF2D6152E600BB3386 /* Model */,
+				823A6FCE2D6153E300BB3386 /* Extensions */,
+				823A6FD62D61546600BB3386 /* Config */,
+				823A6FEE2D622E0500BB3386 /* Stickers */,
+				829731412D6254C30040E116 /* Views */,
 			);
 			name = Cards;
 			packageProductDependencies = (
@@ -254,9 +310,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cards/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cards/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Cards will save your card to the Photo Library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -282,9 +339,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cards/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cards/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Cards will save your card to the Photo Library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
